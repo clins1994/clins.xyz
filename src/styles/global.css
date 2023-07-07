@@ -29,7 +29,8 @@ a {
   color: #3273dc;
 }
 nav a {
-  margin-right: 10px;
+  margin-right: 6px;
+  font-size: 14px;
 }
 textarea {
   width: 100%;

@@ -1,11 +1,15 @@
 ---
 import { MY_NAME } from '../consts'
+import SocialLinkIcons from './SocialLinkIcons.astro'
 const today = new Date()
 ---
 
 <footer>
-  &copy; {today.getFullYear()}
-  {MY_NAME}. All rights reserved.
+  <SocialLinkIcons />
+  <div>
+    &copy; {today.getFullYear()}
+    {MY_NAME}. All rights reserved.
+  </div>
 </footer>
 <style>
   footer {
