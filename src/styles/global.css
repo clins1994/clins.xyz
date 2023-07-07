@@ -65,3 +65,18 @@ blockquote {
   margin: 0px;
   font-style: italic;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .container-left {
+    flex: 1;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .container-right {
+    flex: 1;
+  }
+}
