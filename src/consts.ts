@@ -13,6 +13,11 @@ export const BRIEF_INTRO = {
     bonus:
       'In the following sections I share a bit of my experience in the various industries that I worked in.'
   },
+  kss: {
+    title: 'Software Consulting',
+    content:
+      'With the goal of going beyond my software engineering skills by getting closer to the customer as well as diversifying my portfolio I decided to venture into the world of consulting. In a bit over 6 months I was able to work with clients from various industries and develop software solutions using technologies that were far beyond what I had used so far in my career. I also got the opportunity to work in a completely Japanese speaking environment which has improved my technical Japanese very quickly. '
+  },
   moneytree: {
     title: 'Banking & Fintech',
     content:
@@ -32,5 +37,10 @@ export const BRIEF_INTRO = {
     title: 'Augmented Reality',
     content:
       'I worked as a researcher for a Brazilian augmented reality research lab called Voxar Labs. There I developed mobile applications (Android) that used augmented reality and authored 1 paper and co-authored 3 others. I got the chance to travel around Brazil to attend symposiums and present my research to the community and run workshops.'
+  },
+  rv: {
+    title: 'Web Development',
+    content:
+      'Developed the website for an RV Rental company based in Japan setting up an automated booking system using wix and bookingmood.'
   }
 }
