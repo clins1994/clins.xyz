@@ -1,14 +1,10 @@
 ---
+import { EMAIL, HANDLE, RESUME_URL } from '../consts'
 import HeaderLink from './HeaderLink.astro'
 ---
 
-<HeaderLink href="https://linktr.ee/clins777" target="_blank">Linktree</HeaderLink>
-<HeaderLink href="https://www.linkedin.com/in/caiolins" target="_blank">LinkedIn</HeaderLink>
-<HeaderLink href="https://github.com/clins777" target="_blank">GitHub</HeaderLink>
-<HeaderLink href="mailto:clins7777777@gmail.com" target="_blank">Email</HeaderLink>
-<HeaderLink
-  href="https://drive.google.com/file/d/1F6NKUhDfrfMXeknScqi5N2oHCYP8Rb5P"
-  target="_blank"
->
-  Resume
-</HeaderLink>
+<HeaderLink href={`https://linktr.ee/${HANDLE}`} target="_blank">Linktree</HeaderLink>
+<HeaderLink href={`https://linkedin.com/in/${HANDLE}`} target="_blank">LinkedIn</HeaderLink>
+<HeaderLink href={`https://github.com/${HANDLE}`} target="_blank">GitHub</HeaderLink>
+<HeaderLink href={`mailto:${EMAIL}`} target="_blank">Email</HeaderLink>
+<HeaderLink href={RESUME_URL} target="_blank">Resume</HeaderLink>

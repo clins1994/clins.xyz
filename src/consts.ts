@@ -1,12 +1,15 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
+export const FIRST_NAME = import.meta.env.PUBLIC_FIRST_NAME
+export const SECOND_NAME = import.meta.env.PUBLIC_LAST_NAME
+export const HANDLE = import.meta.env.PUBLIC_HANDLE
+export const EMAIL = import.meta.env.PUBLIC_EMAIL
+export const RESUME_URL = import.meta.env.PUBLIC_RESUME_URL
 
-export const SITE_TITLE = 'Caio Lins • clins777'
-export const SITE_DESCRIPTION = "Welcome clins777's website!"
-export const MY_NAME = 'Caio Lins'
-export const MY_HANDLE = 'clins777'
+export const FULL_NAME = `${FIRST_NAME} ${SECOND_NAME}`
+export const SITE_TITLE = `${FULL_NAME} • ${HANDLE}`
+export const SITE_DESCRIPTION = `Welcome to ${FIRST_NAME}'s website!`
+
 export const BRIEF_INTRO = {
-  hello: "Hello! I'm Caio, a 🇧🇷 Brazilian 👨🏻‍💻 Software Engineer based in 🇯🇵 Tokyo",
+  hello: `Hello! I'm ${FIRST_NAME}, a Software Engineer based in Tokyo`,
   overview: {
     content:
       'I have been programming for 10+ years. 2 years of professional experience in Brazil and 3+ years in Japan. I have experience working in digital innovation, automotive and banking / fintech industries. With my positive mindset, strong communication and engineering skills, I am an excellent candidate to help you solve your IT solution problems.',
