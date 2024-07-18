@@ -2,13 +2,13 @@
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
-import { SITE_TITLE, SITE_DESCRIPTION, BRIEF_INTRO } from '../consts'
+import { SITE_DESCRIPTION, BRIEF_INTRO, FULL_NAME } from '../consts'
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={FULL_NAME} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />

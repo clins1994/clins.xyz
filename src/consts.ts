@@ -1,11 +1,6 @@
-export const FIRST_NAME = import.meta.env.PUBLIC_FIRST_NAME
-export const SECOND_NAME = import.meta.env.PUBLIC_LAST_NAME
-export const HANDLE = import.meta.env.PUBLIC_HANDLE
-export const EMAIL = import.meta.env.PUBLIC_EMAIL
-export const RESUME_URL = import.meta.env.PUBLIC_RESUME_URL
+import { FIRST_NAME, SECOND_NAME } from "../astro.config.mjs"
 
 export const FULL_NAME = `${FIRST_NAME} ${SECOND_NAME}`
-export const SITE_TITLE = `${FULL_NAME} • ${HANDLE}`
 export const SITE_DESCRIPTION = `Welcome to ${FIRST_NAME}'s website!`
 
 export const BRIEF_INTRO = {

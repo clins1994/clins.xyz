@@ -1,9 +1,17 @@
-import { defineConfig } from 'astro/config'
-import mdx from '@astrojs/mdx'
-import sitemap from '@astrojs/sitemap'
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+import { defineConfig } from 'astro/config';
+import { loadEnv } from 'vite';
 
-// https://astro.build/config
+export const {
+  PUBLIC_FIRST_NAME: FIRST_NAME,
+  PUBLIC_SECOND_NAME: SECOND_NAME,
+  PUBLIC_HANDLE: HANDLE,
+  PUBLIC_EMAIL: EMAIL,
+  PUBLIC_RESUME_URL: RESUME_URL
+} = loadEnv(process.env.NODE_ENV, process.cwd(), "");
+
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://clins.me',
   integrations: [mdx(), sitemap()]
 })
